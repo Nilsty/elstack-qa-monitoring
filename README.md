@@ -22,6 +22,7 @@ Build and run the docker container
 docker build -t el-qa-mon .
 docker run -d --name qa-mon-elastic-stack -p 80:80 -p 8060:8060 -p 9200:9200 el-qa-mon
 ```
+This docker container will bring up Logstash, Elastic Search and Kibana with a default configuartion. I used [this docker image](https://hub.docker.com/r/blacktop/elastic-stack/) as a base and only added the [Logstash http-input-plugin](https://www.elastic.co/blog/introducing-logstash-input-http-plugin).
 
 ## Explore Kibana and Logstash
 
