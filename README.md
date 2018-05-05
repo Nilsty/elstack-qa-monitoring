@@ -1,8 +1,8 @@
 # Monitor your automation test results with logstash, elastic search and kibana
 
 ## Intro
-As QA you are always required to provide the best possible transparancy for your test automation. To always know what was tested when and with what result will benefit your stackholders as well as your team members.
-This demo project should show how the elastic stack can be use as a monitoring tool for automation test results.
+As QA you are always required to provide the best possible transparency for your test automation. To always know what was tested when and with what result will benefit your stakeholders as well as your team members.
+This demo project should show how the elastic stack can be used as a monitoring tool for automation test results.
 
 ## Requirements
 
