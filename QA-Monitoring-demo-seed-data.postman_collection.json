@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "9c8fef50-751e-4dc1-8d2c-6fc3826eefab",
+		"name": "QA-Monitoring-demo-seed-data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Report1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"environment\" : \"Staging\", \n\t\"test_title\" : \"the-test-test\", \n\t\"result\" : \"PASS\", \n\t\"report\" : \"All test steps have passed.\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8060/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8060",
+					"path": [
+						""
+					]
+				},
+				"description": "."
+			},
+			"response": []
+		},
+		{
+			"name": "Report2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"environment\" : \"Production\", \n\t\"test_title\" : \"the-test-test\", \n\t\"result\" : \"PASS\", \n\t\"report\" : \"All test steps have passed.\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8060/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8060",
+					"path": [
+						""
+					]
+				},
+				"description": "."
+			},
+			"response": []
+		},
+		{
+			"name": "Report3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"environment\" : \"Staging\", \n\t\"test_title\" : \"the-test-test\", \n\t\"result\" : \"FAIL\", \n\t\"report\" : \"Test failed on step 23\\nCould not find UI object.\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8060/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8060",
+					"path": [
+						""
+					]
+				},
+				"description": "."
+			},
+			"response": []
+		}
+	]
+}
