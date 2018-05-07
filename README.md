@@ -90,7 +90,8 @@ In your browser go to http://localhost:80 to see the Kibana frontend.
 3. Go to discover and select the fields you are interested in to have a less convoluted view.
 ![index pattern](/images/selected-fields.png)
 
-4. Build some nice visualisations in the Visualize section
+4. Build some nice visualisations in the Visualize section.
+
 I highly recommend using a [tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-kibana-dashboards-and-visualizations) to get into this.
  
 
