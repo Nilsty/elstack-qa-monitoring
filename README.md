@@ -42,9 +42,7 @@ newman run QA-Monitoring-demo-seed-data.postman_collection.json
 ```
 curl -X POST \
   http://localhost:8060/ \
-  -H 'Cache-Control: no-cache' \
   -H 'Content-Type: application/json' \
-  -H 'Postman-Token: 1b71cf1e-cb7f-44d2-87cd-0bb9d7754e6a' \
   -d '{
 	"environment" : "Staging",
 	"test_title" : "the-test-test",
@@ -54,9 +52,7 @@ curl -X POST \
 }'
 curl -X POST \
   http://localhost:8060/ \
-  -H 'Cache-Control: no-cache' \
   -H 'Content-Type: application/json' \
-  -H 'Postman-Token: 764d202c-5f1f-4068-9f39-2359e024e63d' \
   -d '{
 	"environment" : "Production",
 	"test_title" : "the-test-test",
@@ -66,9 +62,7 @@ curl -X POST \
 }'
 curl -X POST \
   http://localhost:8060/ \
-  -H 'Cache-Control: no-cache' \
   -H 'Content-Type: application/json' \
-  -H 'Postman-Token: d4eea417-95d8-49aa-bcd7-e3d75a499573' \
   -d '{
 	"environment" : "Staging",
 	"test_title" : "the-test-test",
