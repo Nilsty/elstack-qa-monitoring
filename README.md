@@ -11,7 +11,8 @@ You need to have [docker](https://www.docker.com/) installed.
 To later send seed demo data as test results you can either use
 * [Postman](https://www.getpostman.com/),
 * [Newman](https://github.com/postmanlabs/newman#getting-started),
-* or [cURL](https://curl.haxx.se/)
+* [cURL](https://curl.haxx.se/)
+* or [Robotframework](https://robotframework.org/) with [RequestsLibrary](https://github.com/bulkan/robotframework-requests)
 
 ## How to run it
 
@@ -45,11 +46,11 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 1b71cf1e-cb7f-44d2-87cd-0bb9d7754e6a' \
   -d '{
-	"environment" : "Staging", 
-	"test_title" : "the-test-test", 
-	"result" : "PASS", 
+	"environment" : "Staging",
+	"test_title" : "the-test-test",
+	"result" : "PASS",
 	"report" : "All test steps have passed."
-	
+
 }'
 curl -X POST \
   http://localhost:8060/ \
@@ -57,11 +58,11 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 764d202c-5f1f-4068-9f39-2359e024e63d' \
   -d '{
-	"environment" : "Production", 
-	"test_title" : "the-test-test", 
-	"result" : "PASS", 
+	"environment" : "Production",
+	"test_title" : "the-test-test",
+	"result" : "PASS",
 	"report" : "All test steps have passed."
-	
+
 }'
 curl -X POST \
   http://localhost:8060/ \
@@ -69,13 +70,15 @@ curl -X POST \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: d4eea417-95d8-49aa-bcd7-e3d75a499573' \
   -d '{
-	"environment" : "Staging", 
-	"test_title" : "the-test-test", 
-	"result" : "FAIL", 
+	"environment" : "Staging",
+	"test_title" : "the-test-test",
+	"result" : "FAIL",
 	"report" : "Test failed on step 23\nCould not find UI object."
-	
+
 }'
 ```
+* or use these robot framework tests to populate some example test results
+`robot robot-tests`
 
 ## Find data in Kibana
 
@@ -90,8 +93,5 @@ In your browser go to http://localhost:80 to see the Kibana frontend.
 3. Go to discover and select the fields you are interested in to have a less convoluted view.
 ![index pattern](/images/selected-fields.png)
 
-4. Build some nice visualisations in the Visualize section. 
+4. Build some nice visualisations in the Visualize section.
 I highly recommend using a [tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-kibana-dashboards-and-visualizations) to get into this.
- 
-
-
