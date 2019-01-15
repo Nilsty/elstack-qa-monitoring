@@ -8,10 +8,10 @@ Suite Setup  Create API session
 
 *** Test Cases ***
 Example 1
-    Post example 1 test results
+    Post example test results Staging passed
 
 Example 2
-    Post example 2 test results
+    Post example test results Production failed
 
 Example 3
-    Post example 3 test results
+    Post example test results Production passed
