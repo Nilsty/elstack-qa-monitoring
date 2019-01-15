@@ -1,10 +1,6 @@
 *** Settings ***
-Documentation  Example of an API test using the Requests Library
-...            call the API.
-...            The first test case valides the response code.
-...            The second test case valides the respons time.
-...            The third test cases iterates over a json response
-...            to filter by a partial string match.
+Documentation  Creation of example test reports to populate via
+...            logstash in Kibana.
 
 Resource  Resources/Keywords.robot
 
